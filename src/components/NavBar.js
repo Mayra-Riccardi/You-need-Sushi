@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../img/logo.png';
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 rounded">
         <div className="container-fluid">
         <a className="navbar-brand" href="#">
         <img src={logo} alt="" width="80" height="80" class="d-inline-block align-text-bottom"/>
@@ -28,6 +29,7 @@ const NavBar = () => {
         </li>
         </ul>
         </div>
+        <CartWidget/>
         </div>
         </nav>
     )
