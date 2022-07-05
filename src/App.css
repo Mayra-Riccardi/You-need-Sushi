@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.navbar{
+  background-color: #ffbf6d1f;
+}
+.navbar-collapse{
+  justify-content: center;
+  margin-top: 56px;
+}
+.navbar-nav{
+  margin-right: 200px;
+}
