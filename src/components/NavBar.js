@@ -1,3 +1,4 @@
+import '../styles/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../img/logo.png';
 import CartWidget from './CartWidget';

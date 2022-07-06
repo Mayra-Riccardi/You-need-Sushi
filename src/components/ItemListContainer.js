@@ -1,7 +1,8 @@
+import '../styles/styledComponents.css';
 
 const ItemListContainer = ({greeting}) => {
     return(
-        <p>Hola, mas adelante voy a ser un catálogo</p>
+        <p className ="Wrapper">{greeting}</p>
     );
 }
 
