@@ -3,3 +3,40 @@
     flex-wrap: wrap;
     margin-left: 20px;
 }
+
+.card{
+    background-color: #fbe8ce1f;
+    width: 18rem;
+    border-color: #f8ddb71f;
+}
+
+.counter{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.btn-outline-success{
+    padding-bottom: 2px;
+    padding-top: 2px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boton1{
+    margin-right: 20px;
+}
+
+.boton2{
+    margin-left: 20px;
+}
+.btn-primary{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: transparent;
+    border-color: transparent;
+    --bs-btn-color: #0d6efd;
+}
