@@ -7,17 +7,19 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
     const Sumar = () => {
         if (counter < stock){
-            const aux = counter+1
-            setCounter(aux)
+            let cantidad = counter+1
+            setCounter(cantidad)
         } else{
-          alert("No hay mas stock")
+          alert("Solo puedes agregar un máximo de 5 unidades.")
         }
     }
 
     const Restar = () => {
         if (counter > initial){
-            const aux = counter-1
-            setCounter(aux)
+            let cantidad = counter-1
+            setCounter(cantidad)
+        } else {
+          alert("No hay mas productos para eliminar.")
         }
     }
 
