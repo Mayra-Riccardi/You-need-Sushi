@@ -1,7 +1,15 @@
 .Wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    justify-content: center;
+}
+.counter-card{
+    background-color:rgba(236, 236, 236, 0.793);
+    width: 18rem;
+    border-color: #f7c8861f;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 90px;
 }
 
 .card{
@@ -13,9 +21,12 @@
     margin-left: 20px;
 }
 
-.card:hover {
-    transform: translateY(10px);
-    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2); }
+.card:hover{
+ 
+        background-color:#000;
+        opacity:0.5;
+        border-radius:30px;
+}
 
 .counter{
     display: flex;
