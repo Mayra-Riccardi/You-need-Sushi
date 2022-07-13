@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import '../styles/styledComponents.css';
 
-let cantidad = ""
+
 const ItemCount = ({initial, stock, onAdd}) => {
 
     const [counter, setCounter] = useState(initial)
 
     const Sumar = () => {
         if (counter < stock){
-            cantidad = counter+1
-            setCounter(cantidad)
+            setCounter(counter+1)
         } else{
           alert("Solo puedes agregar un máximo de 5 unidades.")
         }
@@ -17,8 +16,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
     const Restar = () => {
         if (counter > initial){
-            cantidad = counter-1
-            setCounter(cantidad)
+            setCounter(counter-1)
         } else {
           alert("No hay mas productos para eliminar.")
         }
