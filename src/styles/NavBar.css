@@ -39,3 +39,8 @@
     margin-top: 65px;
     margin-left: 20px;
   }
+
+  .shadow-lg-a {
+    box-shadow: 0 1rem 3rem!important;
+    color: #c9a5744f;
+  }

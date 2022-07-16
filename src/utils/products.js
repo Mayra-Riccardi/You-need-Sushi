@@ -5,7 +5,8 @@ export const products = [
       brand: "Sriracha",
       package: "270 ml.",
       img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/products/hot-salsa1-9b4c6a281f2226ba2316504673165058-640-0.png",
-      price: "Precio $300"
+      price: "Precio $300",
+      description: "Salsa picante procedente del sureste de Asia muy popular en Tailandia."
     },
     {
       id: 2,

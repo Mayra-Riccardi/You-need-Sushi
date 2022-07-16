@@ -19,9 +19,7 @@ const ItemDetailContainer = () => {
     
     console.log(ItemData)
     return (
-         
-            <ItemDetail items={ItemData}/>
-            
+            <ItemDetail item={ItemData}/>
     )
 }
 
