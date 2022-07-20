@@ -1,5 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/ItemDetails.css"
+import { Link } from 'react-router-dom';
 
 const Item = ({ product }) => {
   return (
@@ -13,6 +15,7 @@ const Item = ({ product }) => {
             </h4>
             <p className="texto">{product.package}</p>
             <p className="texto">{product.price}</p>
+            <Link type="button" className="btn btn-primary btn-sm" to="/item/">Más Info</Link>
           </div>
         </div>
       </section>

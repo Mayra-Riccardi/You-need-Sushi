@@ -6,7 +6,8 @@ export const products = [
       package: "270 ml.",
       img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/products/hot-salsa1-9b4c6a281f2226ba2316504673165058-640-0.png",
       price: "Precio $300",
-      description: "Salsa picante procedente del sureste de Asia muy popular en Tailandia."
+      description: "Salsa picante procedente del sureste de Asia muy popular en Tailandia.",
+      category: 1
     },
     {
       id: 2,
@@ -14,7 +15,8 @@ export const products = [
       brand: "Fumeiga",
       package: "2 lts.",
       img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/products/pasted-20210924-095208_clipped_rev_11-69b35c846794124c0e16324880227894-1024-1024.png",
-      price: "Precio $600"
+      price: "Precio $600",
+      category: 1
     },
     {
       id: 3,
@@ -22,7 +24,8 @@ export const products = [
       brand: "Agiibo",
       package: "5 lts.",
       img: "https://i0.wp.com/casachinaar.com/wp-content/uploads/2020/07/tradicional-5L.png?fit=600%2C600&ssl=1",
-      price: "Precio $1400"
+      price: "Precio $1400",
+      category: 1
     },
     {
       id: 4,
@@ -30,7 +33,8 @@ export const products = [
       brand: "Kometo",
       package: "5 kg.",
       img: "https://http2.mlstatic.com/D_NQ_NP_862515-MLA46899698292_072021-O.webp",
-      price: "Precio $300"
+      price: "Precio $300",
+      category: 2
     },
     {
       id: 5,
@@ -38,7 +42,8 @@ export const products = [
       brand: "Fortuna",
       package: "30 kg.",
       img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/products/arroz-fortuna-para-sushi-00000-30-kg1-788b405e0107be116916446729176231-640-0.png",
-      price: "Precio $350"
+      price: "Precio $350",
+      category: 2
     },
     {
       id: 6,
@@ -46,7 +51,8 @@ export const products = [
       brand: "Nori",
       package: "x100 unidades ",
       img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/products/dsc_0227_clipped_rev_11-197ede5ed89588e96216201414563274-640-0.png",
-      price: "Precio $6.100"
+      price: "Precio $6.100",
+      category: 3
     },
     {
       id: 7,
@@ -54,6 +60,7 @@ export const products = [
       brand: "Nori",
       package: "x10 unidades",
       img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/products/algas-nori-y-s-n-10-laminas1-8804a0e81aa5950bf216430344311914-640-0.png",
-      price: "Precio $1.900"
+      price: "Precio $1.900",
+      category: 3
     },
   ];

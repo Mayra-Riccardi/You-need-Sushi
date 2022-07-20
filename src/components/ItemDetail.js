@@ -8,7 +8,7 @@ const ItemDetail = ({ item }) => {
         <div className="col-md-4">
           <img className="img-detail" src={item.img} alt="Same at value" />
         </div>
-        <div className="col-md-6 text-detail card">
+        <div className="col-md-6 text-detail cardA">
           <h3>
             {item.name} - {item.brand}
           </h3>

@@ -23,7 +23,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
 
   return (
-    <div className="counter-card Wrapper shadow-sm p-3 mb-5 rounded">
+    <div className="counter-card Wrapper">
       <div className="counter">
         <button className="boton1 btn btn-primary" onClick={Restar}>-</button>
         <p>{counter}</p>
