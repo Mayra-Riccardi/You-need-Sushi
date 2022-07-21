@@ -8,18 +8,19 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-      if (id === undefined){
+      
         const myPromise = new Promise((resolve, reject) => {
             setTimeout(() => {
-              resolve(products[id]);
+              resolve(products.find((item) => item.id === parseInt(id)));
             }, 2000);
+            
           });
           
           myPromise.then(res => {
             setItemData(res)
           }) 
-        }   
-    },[]);
+        
+    },[id]);
     
     console.log(ItemData)
     return (

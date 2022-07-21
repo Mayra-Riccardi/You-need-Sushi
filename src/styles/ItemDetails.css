@@ -10,7 +10,7 @@
     flex-direction: column;
     align-content: flex-start;
     align-items: flex-start;
-    margin-left: 158px;
+    margin-left: 260px;
 }
 
 .text-detail h3{
@@ -36,3 +36,9 @@
 .cardA{
     border-color: #f7c88645;
 }
+
+.img-detail{
+    width: 460px;
+    margin-left: 100px;
+}
+    

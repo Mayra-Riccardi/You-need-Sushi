@@ -18,7 +18,7 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="#">Kits</a>
+          <Link className="nav-link" to="/category/4">Kits</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/category/2">Arroz</Link>
