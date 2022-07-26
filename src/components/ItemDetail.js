@@ -3,11 +3,6 @@ import "../styles/ItemDetails.css";
 import ItemCount from "./ItemCount";
 import { Link } from 'react-router-dom';
 
-
-
-
-
-
 const ItemDetail = ({ item }) => {
 
   const [itemCount, setItemCount] = useState (0)
