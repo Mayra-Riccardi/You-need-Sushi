@@ -23,14 +23,23 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
 
   return (
-    <div className="counter-card Wrapper">
-      <div className="counter">
-        <button className="boton1 btn btn-primary" onClick={Restar}>-</button>
-        <p>{counter}</p>
-        <button className="boton2 btn btn-primary" onClick={Sumar}>+</button>
-      </div>
-        <button className="btn btn-outline-success" onClick={() => onAdd(counter)}>Agregar al Carrito</button>
+    <>
+{
+  counter && stock 
+    ?<div className="counter-card Wrapper">
+        <button className="boton1 btn btn-light" onClick={Restar}>-</button>
+        <p className="counter-p">{counter}</p>
+        <button className="boton2 btn btn-light" onClick={Sumar}>+</button>
+        <button className="btn btn-primary btn-sm btn-agregar" onClick={() => onAdd(counter)}>Agregar al Carrito</button>
     </div>
+    : <div className="counter-card Wrapper">
+    <button className="boton1 btn btn-light" onClick={Restar}>-</button>
+    <p className="counter-p">{counter}</p>
+    <button className="boton2 btn btn-light" onClick={Sumar}>+</button>
+    <button className="btn btn-secondary btn-sm disabled btn-agregar" onClick={() => onAdd(counter)}>Agregar al Carrito</button>
+    </div>
+}
+    </>
   );
 };
 
