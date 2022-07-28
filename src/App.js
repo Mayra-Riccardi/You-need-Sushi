@@ -4,10 +4,12 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './containers/ItemListContainer';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import Cart from './components/Cart';
-//en react hay que crear funciones que son los componentes
+import CartContextProvider from './components/CartContext';
+
 
 function App() {
   return (
+    <CartContextProvider>
     <BrowserRouter className="App">
       <NavBar/>
       <Routes>
@@ -17,9 +19,9 @@ function App() {
         <Route path='/cart/' element={<Cart />}/>
       </Routes>
     </BrowserRouter>
+    </CartContextProvider>
   );
 }
 
 export default App;
 
-//Cuando un componente (funcion) necesita parametros (propiedades props) para funcionar, este componente debe presentarse como un objeto

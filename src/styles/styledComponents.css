@@ -94,3 +94,42 @@
     color: #524d45;
     font-style: italic;
 }
+
+.table td, .table th {
+    animation: none;
+    padding: 0.75rem;
+    vertical-align: middle;
+    vertical-align: none;
+    border-top: 1px solid #dee2e6;
+    padding-left: 40px;
+}
+
+.img-carrito{
+    width: 194px;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: rgb(0 0 0 / 0%);
+}
+
+.table{
+    margin-bottom: 0px;
+    --bs-table-border-color: #f9fafb00;
+
+}
+
+.btn-borrar{
+    margin-top: 90px;
+}
+
+h3{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.btn-vaciarCarrito{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 589px;
+
+}
