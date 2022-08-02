@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './containers/ItemListContainer';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import Cart from './components/Cart';
-import CartContextProvider from './components/CartContext';
+import CartContextProvider from './context/CartContext';
 
 
 function App() {

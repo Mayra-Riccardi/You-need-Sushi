@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "../styles/ItemDetails.css";
 import ItemCount from "./ItemCount";
 import { Link } from 'react-router-dom';
-import { CartContext } from './CartContext';
+import { CartContext } from '../context/CartContext';
 
 
 const ItemDetail = ({ item }) => {
@@ -34,7 +34,7 @@ const ItemDetail = ({ item }) => {
           </h3>
           <h5>{item.package}</h5>
           <hr />
-          <h6>{item.price}</h6>
+          <h6>Precio ${item.price}</h6>
           <br />
           <p>{item.description}</p>
         </div>

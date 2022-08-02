@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { CartContext } from "./CartContext";
+import { Link } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 import "../styles/styledComponents.css"
 
 const Cart = () => {
@@ -7,11 +8,12 @@ const Cart = () => {
     console.log(test.cartList)
     return (
         <>
-        <h3>Tu Carrito</h3>
-        <button className="btn btn-danger btn-sm btn-borrar btn-vaciarCarrito" onClick={test.clearAll}>Vaciar Carrito</button>
 
         {
-            test.cartList.length > 0 && test.cartList.map (item => 
+            (test.cartList.length > 0 )
+            ? 
+            test.cartList.map (item => 
+            <>
                 <table className="table table-striped">
                 <tbody>
                 <tr>
@@ -20,12 +22,19 @@ const Cart = () => {
                     <th>{item.brand}</th>
                     <th>{item.package}</th>
                     <th>{item.cantidad} items</th>
-                    <th>{item.price}</th>
-                    <button className="btn btn-danger btn-sm btn-borrar" onClick={() => test.removeItem(item.id)}>Borrar</button>
+                    <th>${item.price}</th>
+                    <button className="btn btn-danger btn-sm btn-trash" onClick={() => test.removeItem(item.id)}>🗑 </button>
                 </tr>
                 </tbody>
             </table>
+            <button className="btn btn-danger btn-sm btn-borrar btn-vaciarCarrito" onClick={test.clearAll}>Vaciar Carrito</button>
+            </>
             )
+            :
+            <>
+            <h3>Tu carrito esta vacio</h3>        
+            <Link to="/"><button className="btn btn-info btn-sm btn-borrar btn-vaciarCarrito">Ir a comprar</button></Link>
+            </> 
 }
         </>   
     );

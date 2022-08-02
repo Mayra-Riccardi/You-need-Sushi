@@ -117,8 +117,10 @@
 
 }
 
-.btn-borrar{
+.btn-trash{
     margin-top: 90px;
+    --bs-btn-hover-bg: #dfdfdf00;
+    --bs-btn-border-width: none;
 }
 
 h3{

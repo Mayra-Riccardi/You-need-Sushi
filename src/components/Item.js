@@ -14,7 +14,7 @@ const Item = ({ product }) => {
               {product.name} - {product.brand}
             </h4>
             <p className="texto">{product.package}</p>
-            <p className="texto">{product.price}</p>
+            <p className="texto">Precio ${product.price}</p>
             <Link className="btn btn-info btn-sm btn-ver" to={`/item/${product.id}`}>Más Info</Link>
           </div>
         </div>
