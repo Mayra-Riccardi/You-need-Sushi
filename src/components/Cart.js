@@ -23,7 +23,8 @@ const Cart = () => {
                     <th>{item.brand}</th>
                     <th>{item.package}</th>
                     <th>{item.cantidad} items</th>
-                    <th>${item.price} - ${test.finalPrice()}</th>
+                    <th>${item.price}</th>
+                    <th>Total ${test.productTotalPrice()}</th>
                     <button className="btn btn-danger btn-sm btn-trash" onClick={() => test.removeItem(item.id)}>🗑 </button>
                 </tr>
                 </tbody>
