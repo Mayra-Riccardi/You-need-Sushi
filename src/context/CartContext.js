@@ -5,7 +5,7 @@ import { createContext, useState } from "react";
  const CartContextProvider = ({children}) => {
     const [cartList, setCartList] = useState([])
     
-    const addToCart = (item, cantidad,) => {
+    const addToCart = (item, cantidad, total) => {
         let foundItem = cartList.find(product => product.id === item.id);
        
         if (foundItem === undefined) {
@@ -36,24 +36,13 @@ import { createContext, useState } from "react";
             return cantidadBadge.reduce(((previusValue, currentValue) => previusValue + currentValue), 0) 
         }
 
-        const calcularTotalProducto = (id) => {
-           let index = cartList.map(item => item.id).indexOf(id);
-           return cartList[index].price * cartList[index].cantidad; 
+        const finalPrice = () => { 
+            const compraTotal = cartList.reduce((acc, item) => (acc + item.cantidad * item.price), 0)        
+            return compraTotal;    
         }
-       
-       /* const sumarPrecioProducto = () => {
-            let precio = cartList.map(item => item.price)
-            let cantidad = cartList.map(item => item.cantidad)
-
-            return (parseInt(precio * cantidad));
-            
-        }
-         console.log(sumarPrecioProducto())
-
-         */
     
     return (
-        <CartContext.Provider value={{cartList, addToCart, removeItem, clearAll, notificacionCarrito, calcularTotalProducto}}>
+        <CartContext.Provider value={{cartList, addToCart, removeItem, clearAll, notificacionCarrito, finalPrice}}>
             {children}
         </CartContext.Provider>
     )

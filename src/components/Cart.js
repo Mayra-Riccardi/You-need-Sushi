@@ -12,8 +12,9 @@ const Cart = () => {
         {
             (test.cartList.length > 0 )
             ? 
-            test.cartList.map (item => 
             <>
+            <button className="btn btn-danger btn-sm btn-borrar btn-vaciarCarrito" onClick={test.clearAll}>Vaciar Carrito</button>
+            {test.cartList.map (item => 
                 <table className="table table-striped">
                 <tbody>
                 <tr>
@@ -22,14 +23,13 @@ const Cart = () => {
                     <th>{item.brand}</th>
                     <th>{item.package}</th>
                     <th>{item.cantidad} items</th>
-                    <th>${item.price}</th>
+                    <th>${item.price} - ${test.finalPrice()}</th>
                     <button className="btn btn-danger btn-sm btn-trash" onClick={() => test.removeItem(item.id)}>🗑 </button>
                 </tr>
                 </tbody>
             </table>
-            <button className="btn btn-danger btn-sm btn-borrar btn-vaciarCarrito" onClick={test.clearAll}>Vaciar Carrito</button>
+            )}
             </>
-            )
             :
             <>
             <h3>Tu carrito esta vacio</h3>        

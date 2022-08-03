@@ -1,8 +1,10 @@
 import React from "react";
 import Item from "./Item";
+import "../styles/styledComponents.css"
+
 
 const ItemList = ({items}) => {
-    if (items.length === 0) return <p>Cargando...</p>
+    if (items.length === 0) return <p className="texto-c">Cargando...</p>
     return (
         <>
         {
