@@ -18,13 +18,13 @@ const Cart = () => {
                 <table className="table table-striped">
                 <tbody>
                 <tr>
-                    <th><img className="img-carrito"src={item.img}/></th>
-                    <th>{item.name}</th>
-                    <th>{item.brand}</th>
-                    <th>{item.package}</th>
-                    <th>{item.cantidad} items</th>
-                    <th>${item.price}</th>
-                    <th>Total ${test.productTotalPrice()}</th>
+                    <th className="tabla"><img className="img-carrito"src={item.img}/></th>
+                    <th className="tabla">{item.name}</th>
+                    <th className="tabla">{item.brand}</th>
+                    <th className="tabla">{item.package}</th>
+                    <th className="tabla">{item.cantidad} items</th>
+                    <th className="tabla">${item.price} c/u</th>
+                    <th className="tabla">Total ${item.price * item.cantidad}</th>
                     <button className="btn btn-danger btn-sm btn-trash" onClick={() => test.removeItem(item.id)}>🗑 </button>
                 </tr>
                 </tbody>
@@ -34,7 +34,7 @@ const Cart = () => {
             :
             <>
             <h3>Tu carrito esta vacio</h3>        
-            <Link to="/"><button className="btn btn-info btn-sm btn-borrar btn-vaciarCarrito">Ir a comprar</button></Link>
+            <Link to="/"><button className="btn btn-info btn-sm btn-borrar btn-comprar">Ir a comprar</button></Link>
             </> 
 }
         </>   

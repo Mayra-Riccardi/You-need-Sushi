@@ -133,9 +133,20 @@ h3{
     margin-bottom: 20px;
     margin-top: 30px;
     margin-left: 589px;
+}
 
+.btn-comprar{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 589px;
 }
 
 .texto-c{
     margin-right: 800px;
 }
+
+.tzbla {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
