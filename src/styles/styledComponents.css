@@ -11,7 +11,7 @@
     margin-left: 899px;
 }
 
-.card{
+.card-container{
     background-color: white;
     width: 18rem;
     border-color: #f7c8861f;
@@ -20,11 +20,18 @@
     margin-left: 20px;
 }
 
-.card:hover{
+.card-container:hover{
  
         background-color:#000;
         opacity:0.5;
         border-radius:30px;
+}
+
+.card-total{
+    width: 18rem;
+    margin-left: 902px;
+    bottom: 167px;
+    background-color: #fcd29ab0;
 }
 
 .counter{
@@ -105,7 +112,7 @@
 }
 
 .img-carrito{
-    width: 194px;
+    width: 161px;
 }
 .table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-accent-bg: rgb(0 0 0 / 0%);
@@ -118,7 +125,7 @@
 }
 
 .btn-trash{
-    margin-top: 90px;
+    margin-top: 71px;
     --bs-btn-hover-bg: #dfdfdf00;
     --bs-btn-border-width: none;
 }
@@ -145,8 +152,13 @@ h3{
     margin-right: 800px;
 }
 
-.tzbla {
-    padding-left: 0px;
-    padding-right: 0px;
+.table-striped{
+    display: flex;
+    justify-content: flex-start;
 }
 
+.table th{
+    padding-left: 5px;
+    padding-right: 20px;
+
+}

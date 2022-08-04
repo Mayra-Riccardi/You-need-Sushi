@@ -23,26 +23,26 @@ import { createContext, useState } from "react";
         }
 
         const removeItem = (id) => {
-            let nuevoEstado = cartList.filter(item => item.id !== id)
-            setCartList(nuevoEstado)
+            let newState = cartList.filter(item => item.id !== id)
+            setCartList(newState)
         }
 
         const clearAll = () => {
             setCartList([]);
         }
 
-        const notificacionCarrito = () => {
+        const cartBudge = () => {
             let cantidadBadge = cartList.map(item => item.cantidad);
             return cantidadBadge.reduce(((previusValue, currentValue) => previusValue + currentValue), 0) 
         }
 
-        const productTotalPrice = () => { 
+        const subTotal = () => { 
             const compraTotal = cartList.reduce((acc, item) => (acc + item.price * item.cantidad), 0)      
             return compraTotal;    
         }
     
     return (
-        <CartContext.Provider value={{cartList, addToCart, removeItem, clearAll, notificacionCarrito, productTotalPrice}}>
+        <CartContext.Provider value={{cartList, addToCart, removeItem, clearAll, cartBudge,subTotal}}>
             {children}
         </CartContext.Provider>
     )

@@ -12,7 +12,7 @@ const CartWidget = () => {
            test.cartList.length > 0 ?
         <>
              <span className="position-absolute top-0 start-70 badge rounded-pill bg-danger">
-             {test.notificacionCarrito()}
+             {test.cartBudge()}
              </span>
            
             <img className='cart' src={cart} alt="" width="35" height="35"/>

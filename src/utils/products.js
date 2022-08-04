@@ -65,7 +65,7 @@ export const products = [
       brand: "Nori",
       package: "x10 unidades",
       img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/products/algas-nori-y-s-n-10-laminas1-8804a0e81aa5950bf216430344311914-640-0.png",
-      price: "Precio $1.900",
+      price: 1900,
       description: "El alga nori es la clase de algas marinas que se utiliza en la preparación del sushi. Incluso, también pueden ser aprovechadas en una amplia variedad de platos como ensaladas crudas, sopas de vegetales y pastas. ",
       category: 3
     },
@@ -75,7 +75,7 @@ export const products = [
       brand: "Sushi",
       package: "7 Ingredientes",
       img: "https://http2.mlstatic.com/D_NQ_NP_625353-MLA41283496323_032020-O.webp",
-      price: "Precio $3.299",
+      price: 3299,
       description: "Si sos amante del sushi y te animás a hacerlo en casa. este kit es ideal para empezar.",
       category: 4
     },
@@ -85,7 +85,7 @@ export const products = [
       brand: "Sushi",
       package: "11 Ingredientes",
       img: "https://http2.mlstatic.com/D_NQ_NP_625353-MLA41283496323_032020-O.webp",
-      price: "Precio $4.658",
+      price: 4658,
       description: "Si sos amante del sushi y te animás a hacerlo en casa. este kit es ideal para empezar. Contiene Arroz, algas, wasabi, Salsa de Soja, Vinagre de Arroz",
       category: 4
     },
