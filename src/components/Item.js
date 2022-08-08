@@ -8,7 +8,7 @@ const Item = ({ product }) => {
     <>
       <section className="container">
         <div className="row">
-          <div className="item shadow mb-4 card card-container shadow p-3 mb-5 bg-body rounded">
+          <div className="item card card-container shadow p-3 mb-5 bg-body rounded cards">
           <img src={product.img} alt="Same at value" />
             <h4 className="nombre">
               {product.name} - {product.brand}

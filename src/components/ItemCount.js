@@ -10,7 +10,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
         if (counter < stock){
             setCounter(counter+1)
         } else{
-          alert("Solo puedes agregar un máximo de 5 unidades.")
+          alert("Has agregado todo el stock disponible de este producto")
         }
     }
 

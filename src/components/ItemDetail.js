@@ -42,7 +42,7 @@ const ItemDetail = ({ item }) => {
       
       {
           itemCount === 0
-          ?<ItemCount initial={itemCount} stock={5} onAdd={onAdd}/>
+          ?<ItemCount initial={itemCount} stock={item.stock} onAdd={onAdd}/>
           : <Link to="/cart"><button className="btn btn-danger btn-sm boton-finalizar">Finalizar compra</button></Link>
       }
       </>

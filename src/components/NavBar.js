@@ -1,6 +1,6 @@
 import '../styles/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../img/logo.png';
+import logo from '../assets/logo.png';
 import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 
@@ -18,16 +18,16 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link" to="/category/4">Kits</Link>
+          <Link className="nav-link" to={`/category/4`}>Kits</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/category/2">Arroz</Link>
+          <Link className="nav-link" to={`/category/2`}>Arroz</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/category/3">Algas</Link>
+          <Link className="nav-link" to={`/category/3`}>Algas</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/category/1">Salsas</Link>
+          <Link className="nav-link" to={`/category/1`}>Salsas</Link>
         </li>
         </ul>
         </div>

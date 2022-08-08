@@ -20,18 +20,12 @@
     margin-left: 20px;
 }
 
-.card-container:hover{
- 
-        background-color:#000;
-        opacity:0.5;
-        border-radius:30px;
-}
 
 .card-total{
     width: 18rem;
     margin-left: 902px;
     bottom: 167px;
-    background-color: #fcd29ab0;
+    background-color: #ffbf6d4f;
 }
 
 .counter{
@@ -161,4 +155,20 @@ h3{
     padding-left: 5px;
     padding-right: 20px;
 
+}
+
+.cards{
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+    
+
+  }
+    
+
+
+.cards:hover{
+
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
 }

@@ -19,7 +19,7 @@ const Cart = () => {
                 <table className="table table-striped ">
                 <tbody>
                 <tr>
-                    <th scope="col"><img className="img-carrito"src={item.img}/></th>
+                    <th scope="col"><img className="img-carrito"src={item.img} alt=""/></th>
                     <th scope="col">{item.name}</th>
                     <th scope="col">{item.brand}</th>
                     <th scope="col">{item.package}</th>
@@ -36,7 +36,7 @@ const Cart = () => {
                      <h5 className="card-title">Subtotal</h5>
                      <h6 className="card-subtitle mb-2 text-muted">({test.cartBudge()} Item/s)</h6>
                      <p className="card-text">${test.subTotal()}</p>
-                     <button className="btn btn-success btn-sm">Finalizar compra</button>
+                     <Link to="/https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=MLA_MP_BRD_EXACT&gclid=CjwKCAjw3K2XBhAzEiwAmmgrAsKueC5auc2ud4yWLXO2Dp6_ZJRnZeDacqMSKv1XXCK-W3jSM9L0VRoCt94QAvD_BwE"><button className="btn btn-success btn-sm">Finalizar compra</button></Link>
                    </div>
                    </div>
             </>
