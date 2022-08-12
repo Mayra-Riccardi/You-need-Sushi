@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../styles/styledComponents.css";
 import ItemList from "../components/ItemList";
 import { useParams } from "react-router-dom";
-
 import { productsCollection } from "../firebase/firebaseConfig";
 import { getDocs, query, where } from "firebase/firestore";
 

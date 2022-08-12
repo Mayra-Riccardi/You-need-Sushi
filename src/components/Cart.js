@@ -3,10 +3,46 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import "../styles/styledComponents.css"
 import "../styles/ItemDetails.css"
+import { collection, serverTimestamp, setDoc, doc } from "firebase/firestore";
+import { db } from "../firebase/firebaseConfig"
 
 const Cart = () => {
     const test = useContext(CartContext)
     console.log(test.cartList)
+
+    const createOrder = () => {
+        let itemsForFirebase = test.cartList.map(item => ({
+            id: item.id,
+            title: item.name,
+            price: item.price,
+            qty: item.cantidad
+        }))
+        let order = {
+            buyer: {
+                email: "may@gmail.com",
+                name: "Mayra Riccardi",
+                phone: "12345678"
+            },
+            date: serverTimestamp(),
+            items: itemsForFirebase,
+            total: test.subTotal()
+        }
+        console.log(order)
+
+      const createOrdeFirestore = async () => {  
+        const orderRef = doc(collection(db, "orders"))
+        await setDoc(orderRef,order)
+        return orderRef
+      }
+
+      createOrdeFirestore()
+      .then(result => alert("Tu Orden fue creada exitosamente bajo el ID " + result.id))
+      .catch(e => console.log(e))
+
+    }
+
+
+
     return (
         <>
 
@@ -36,7 +72,7 @@ const Cart = () => {
                      <h5 className="card-title">Subtotal</h5>
                      <h6 className="card-subtitle mb-2 text-muted">({test.cartBudge()} Item/s)</h6>
                      <p className="card-text">${test.subTotal()}</p>
-                     <Link to="/https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=MLA_MP_BRD_EXACT&gclid=CjwKCAjw3K2XBhAzEiwAmmgrAsKueC5auc2ud4yWLXO2Dp6_ZJRnZeDacqMSKv1XXCK-W3jSM9L0VRoCt94QAvD_BwE"><button className="btn btn-success btn-sm">Finalizar compra</button></Link>
+                     <button className="btn btn-success btn-sm" onClick={createOrder}>Finalizar compra</button>
                    </div>
                    </div>
             </>
