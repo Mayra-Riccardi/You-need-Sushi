@@ -15,6 +15,7 @@ const Item = ({ product }) => {
             </h4>
             <p className="texto">{product.package}</p>
             <p className="texto">Precio ${product.price}</p>
+            <p className="texto">Stock {product.stock}</p>
             <Link className="btn btn-info btn-sm btn-ver" to={`/item/${product.id}`}>Más Info</Link>
           </div>
         </div>

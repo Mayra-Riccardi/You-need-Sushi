@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import "../styles/styledComponents.css"
 import "../styles/ItemDetails.css"
-import { collection, serverTimestamp, setDoc, doc } from "firebase/firestore";
+import { collection, serverTimestamp, setDoc, doc, updateDoc, increment } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig"
 
 const Cart = () => {
@@ -39,7 +39,20 @@ const Cart = () => {
       .then(result => alert("Tu Orden fue creada exitosamente bajo el ID " + result.id))
       .catch(e => console.log(e))
 
+      test.cartList.forEach(async (item) => {
+        const itemRef = doc(db, "products", item.id)
+        await updateDoc(itemRef, {
+            stock: increment(-item.cantidad)
+        })
+      })
+
+
+    //vaciar el carrito post concretar compra
+    test.clearAll();
+
     }
+
+   
 
 
 
