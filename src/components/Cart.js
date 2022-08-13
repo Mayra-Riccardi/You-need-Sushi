@@ -40,6 +40,7 @@ const Cart = () => {
       .catch(e => console.log(e))
 
       test.cartList.forEach(async (item) => {
+        console.log(test.cartList + "hola")
         const itemRef = doc(db, "products", item.id)
         await updateDoc(itemRef, {
             stock: increment(-item.cantidad)
