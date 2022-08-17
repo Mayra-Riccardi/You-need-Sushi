@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# You Need Sushi 🍣
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ecommerce realizado para la entrega final del curso de React en Coderhouse. Es una app que se utilizará para vender productos de Sushi. La marca es una marca real y pronto estará en funcionamiento.
 
-## Available Scripts
+## App en funcionamiento 🛠️
 
-In the project directory, you can run:
+Para ponerla en funcionamiento, solo debes descargar el repositorio y introducir:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Correra la App en modo desarrollador.
+Abre [http://localhost:3000](http://localhost:3000) para visualizarla en el browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La App se recargara autmáticamente cuando pruebes realizar cambios.
+Tambien podrás ver errores en la consola.
 
-### `npm test`
+### Construido con 🛠️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React Js](https://es.reactjs.org/) - Como Libreria de Javascript
+- [Bootstrap](https://react-bootstrap.github.io/) - Como Framework para generar un diseno responsive
+- [Sweet Alert](https://sweetalert2.github.io/) - Para las Alertas
+- [Firebase](https://firebase.google.com/) - Como base de datos para la carga de productos y para la creación de una order de compra una vez que el Usuario confirma.
 
-### `npm run build`
+### Autores 👩🏻‍💻
+- [@Mayra-Riccardi](https://github.com/Mayra-Riccardi)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Licencia 📄`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este proyecto no está bajo Licencia.
 
-### `npm run eject`
+## Video de la App en funcionamiento 🚀
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[![Alt text](https://img.youtube.com/vi/9u0LRqWD_4Y/0.jpg)]
+(https://www.youtube.com/watch?v=9u0LRqWD_4Y)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Expresiones de Gratitud 🎁
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Quiero agradecer a mi profesor del curso de React [@alexmarinmendez](https://github.com/alexmarinmendez#hola-mundo-soy-alex-marin-mendez) y a mi tutor [@AleP1](https://github.com/AleP1) por la paciencia, las clases, el tiempo y la predisposicion.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Sobre mi 🙋🏻‍♀️
+Soy Front End Developer, estudiante de la carrera de desalloro Full Stack en Coderhose. Amante de la tecnologia y resolver problemas.
+Te dejo mi perfil de Linkedin [Mayra Riccardi](https://www.linkedin.com/in/mayra-riccardi-30060427/)
