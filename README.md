@@ -40,5 +40,5 @@ Este proyecto no está bajo Licencia.
 Quiero agradecer a mi profesor del curso de React [@alexmarinmendez](https://github.com/alexmarinmendez#hola-mundo-soy-alex-marin-mendez) y a mi tutor [@AleP1](https://github.com/AleP1) por la paciencia, las clases, el tiempo y la predisposicion.
 
 ## Sobre mi 🙋🏻‍♀️
-Soy Front End Developer, estudiante de la carrera de desalloro Full Stack en Coderhose. Amante de la tecnologia y resolver problemas.
+Soy Front End Developer, estudiante de la carrera de desalloro Full Stack en Coderhouse. Amante de la tecnologia y resolver problemas.
 Te dejo mi perfil de Linkedin [Mayra Riccardi](https://www.linkedin.com/in/mayra-riccardi-30060427/)
