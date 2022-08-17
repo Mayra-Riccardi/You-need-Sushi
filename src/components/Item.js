@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/ItemDetails.css"
+import "../styles/styledComponents.css"
 import { Link } from 'react-router-dom';
 
 const Item = ({ product }) => {
@@ -8,18 +8,17 @@ const Item = ({ product }) => {
     <>
       <section className="container">
         <div className="row">
-          <div className="item card card-container shadow p-3 mb-5 bg-body rounded cards">
-          <img src={product.img} alt="Same at value" />
-            <h4 className="nombre">
+          <div className="item card card-container shadow mb-5 rounded cards">
+          <img src={product.img} alt="Same at value" className="img" />
+            <h3 className="nombre">
               {product.name} - {product.brand}
-            </h4>
-            <p className="texto">{product.package}</p>
-            <p className="texto">Precio ${product.price}</p>
+            </h3>
+            <h5 className="precio">Precio ${product.price}</h5>
             <p className="texto">Stock {product.stock}</p>
-            <Link className="btn btn-info btn-sm btn-ver" to={`/item/${product.id}`}>Más Info</Link>
+            <Link className="btn btn-primary btn-sm btn-ver" to={`/item/${product.id}`}>Más Info</Link>
           </div>
         </div>
-      </section>
+  </section>
     </>
   );
 };

@@ -3,7 +3,8 @@ import "../styles/ItemDetails.css";
 import ItemCount from "./ItemCount";
 import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
-
+import Spinner from 'react-bootstrap/Spinner';
+import Swal from "sweetalert2";
 
 const ItemDetail = ({ item }) => {
 
@@ -12,11 +13,30 @@ const ItemDetail = ({ item }) => {
 
   
   const onAdd = (param) => {
-    alert(`Has agregado ${param} productos al Carrito. Muchas Gracias`);
+    agregarProductos();
     setItemCount(param)
     test.addToCart(item, param);
   };
 
+  const agregarProductos = () =>{
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 1000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+    
+    Toast.fire({
+      icon: 'success',
+      title: 'Productos agregados al carrito'
+    })
+
+  }
 
   return (
     <>
@@ -25,18 +45,19 @@ const ItemDetail = ({ item }) => {
       ?
       <>
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 border border-white">
           <img className="img-detail" src={item.img} alt="Same at value" />
         </div>
         <div className="col-md-6 text-detail cardA">
-          <h3>
+          <h3 className="producto-titulo">
             {item.name} - {item.brand}
           </h3>
-          <h5>{item.package}</h5>
           <hr />
-          <h6>Precio ${item.price}</h6>
+          <h6 className="producto-detalles">Precio ${item.price}</h6>
+          <h6 className="producto-detalles">{item.package}</h6>
+          <h6 className="producto-detalles">Stock {item.stock} unidades.</h6>
           <br />
-          <p>{item.description}</p>
+          <p className="producto-p">{item.description}</p>
         </div>
       </div>
       
@@ -47,7 +68,7 @@ const ItemDetail = ({ item }) => {
       }
       </>
       
-      : <p style={{margin:"30px"}}>Cargando...</p>
+      : <Spinner animation="border" variant="warning" />
 
     }
     </>

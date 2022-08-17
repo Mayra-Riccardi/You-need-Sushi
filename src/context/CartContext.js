@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
- export const CartContext = createContext();
+export const CartContext = createContext();
 
  const CartContextProvider = ({children}) => {
     const [cartList, setCartList] = useState([])
@@ -28,7 +28,7 @@ import { createContext, useState } from "react";
         }
 
         const clearAll = () => {
-            setCartList([]);
+            setCartList([])
         }
 
         const cartBudge = () => {
@@ -36,13 +36,17 @@ import { createContext, useState } from "react";
             return cantidadBadge.reduce(((previusValue, currentValue) => previusValue + currentValue), 0) 
         }
 
-        const subTotal = () => { 
-            const compraTotal = cartList.reduce((acc, item) => (acc + item.price * item.cantidad), 0)      
-            return compraTotal;    
-        }
-    
+        //const subTotal = () => { 
+            //const compraTotal = cartList.reduce((acc, item) => (acc + item.price * item.cantidad), 0)      
+            //return compraTotal;    
+        //}
+
+        const totalPrice = () => {
+            return cartList.reduce((prev, item) => prev + item.cantidad * item.price, 0);
+        };
+  
     return (
-        <CartContext.Provider value={{cartList, addToCart, removeItem, clearAll, cartBudge,subTotal}}>
+        <CartContext.Provider value={{cartList, addToCart, removeItem, clearAll, cartBudge,totalPrice}}>
             {children}
         </CartContext.Provider>
     )

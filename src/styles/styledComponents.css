@@ -4,28 +4,31 @@
     flex-wrap: nowrap;
     justify-content: center;
 }
+
 .counter-card{
     width: 18rem;
     margin-top: -80px;
-    margin-bottom: 15px;
+    margin-bottom: 15%;
     margin-left: 899px;
 }
 
 .card-container{
-    background-color: white;
-    width: 18rem;
-    border-color: #f7c8861f;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    background-color: #000000;
+    width: 15rem;
+    border-color: #ffc1073d;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-
 .card-total{
-    width: 18rem;
-    margin-left: 902px;
-    bottom: 167px;
-    background-color: #ffbf6d4f;
+    margin-bottom: 108px;
+        display: flex;
+        align-items: flex-end;
+        background-color: #000000;
+        border-color: #febf6e;
 }
 
 .counter{
@@ -39,9 +42,6 @@
 .btn-agregar{
     padding-top: 2px;
     padding-bottom: 2px;
-    background-color: #0d6efd;
-    border-color: transparent;
-    --bs-btn-color: white;
     margin-left: 15px;
 }
 
@@ -54,18 +54,6 @@
     margin-right: 0px;
 }
 
-
-.btn-light{
-    --bs-btn-bg: none; 
-    --bs-btn-border-color: none;
-    --bs-btn-hover-bg: #e9ecef;
-}
-
-.boton-finalizar {
-    margin-left: 1039px;
-    margin-top: -150px;
-}
-
 .counter-p{
     margin-bottom: 0px;
     display: flex;
@@ -73,6 +61,7 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    color: white;
 }
 
 .mb-3{
@@ -85,41 +74,60 @@
     font-size: medium;
     font-weight: 600;
     font-style: initial;
-    color: #524d45;
+    color: #d7be74;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
 }
 
 .texto{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: 400;
-    color: #524d45;
+    color: #fdd04a8c;
     font-style: italic;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
 }
 
-.table td, .table th {
-    animation: none;
-    padding: 0.75rem;
-    vertical-align: middle;
-    vertical-align: none;
-    border-top: 1px solid #dee2e6;
-    padding-left: 40px;
+.precio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: larger;
+    font-style: bold; 
+    color: #dba400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 0px;
+}
+
+td .td-texto{
+    margin-left: 20px;
+    padding-left: 3.5%;
 }
 
 .img-carrito{
-    width: 161px;
+    width: 96px;
+    margin-left: 25%;
 }
-.table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-accent-bg: rgb(0 0 0 / 0%);
+.table-striped {
+    display: inline-table;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
 }
 
-.table{
-    margin-bottom: 0px;
-    --bs-table-border-color: #f9fafb00;
-
+.td-img{
+    width: 350px;
 }
 
 .btn-trash{
-    margin-top: 71px;
+    margin-top: 43px;
     --bs-btn-hover-bg: #dfdfdf00;
     --bs-btn-border-width: none;
 }
@@ -142,9 +150,6 @@ h3{
     margin-left: 589px;
 }
 
-.texto-c{
-    margin-right: 800px;
-}
 
 .table-striped{
     display: flex;
@@ -165,10 +170,44 @@ h3{
 
   }
     
-
-
-.cards:hover{
-
-    box-shadow: 5px 6px 6px 2px #e9ecef;
+.card-container:hover{
     transform: scale(1.1);
+    border-color: #000000;
+    background-color: #2a2514a8;
+}
+
+.main{
+    background-color: #000000;
+}
+.carrito-vacio-compra{
+    color: white;
+    margin-top: 165px;
+    margin-bottom: 125px;
+    margin-left: 0px;
+
+}
+.btn-comprar{
+    margin-bottom: 262px;
+    margin-top: -87px
+}
+@media only screen and (max-width: 600px){
+    .btn-vaciarCarrito{
+        margin-left: 40%;
+    }
+    .img-carrito {
+        width: 83px;
+        margin-left: -13px;
+    }
+    .btn-comprar {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-left: 38%;
+        margin-bottom: 51%;
+    }
+    .carrito-vacio-compra{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            color: white;
+        }
 }

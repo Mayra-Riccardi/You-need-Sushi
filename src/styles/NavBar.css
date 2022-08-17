@@ -1,5 +1,5 @@
 .App-header {
-    background-color: #282c34;
+    background-color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     }
   }
   .navbar{
-    background-color: #ffbf6d1f;
+    background-color: #ffc10766;
   }
   .navbar-collapse{
     justify-content: center;
@@ -42,5 +42,28 @@
 
   .shadow-lg-a {
     box-shadow: 0 1rem 3rem!important;
-    color: #c9a5744f;
+    color: #44444416;
   }
+
+.brand{
+      color: #ff5075;
+    font-style: normal;
+    font-weight: 800;
+    padding-top: 56px;
+    /* margin-right: -57px; */
+    margin-left: -31px;
+}
+
+.nav-link{
+  color: #ff5075;
+
+}
+
+nav.navbar.navbar-expand-lg.shadow-lg-a.p-3.mb-5.rounded.navbar-dark.bg-dark.border-bottom {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+
+nav.navbar.navbar-expand-lg.shadow-lg-a.p-3.mb-5.rounded.navbar-dark.bg-dark.border-bottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #664d03!important;
+}
