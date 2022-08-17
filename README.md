@@ -31,8 +31,8 @@ Este proyecto no está bajo Licencia.
 
 ## Video de la App en funcionamiento 🚀
 
-[![Alt text](https://img.youtube.com/vi/9u0LRqWD_4Y/0.jpg)]
-(https://www.youtube.com/watch?v=9u0LRqWD_4Y)
+[![You Need Sushi](https://img.youtube.com/vi/9u0LRqWD_4Y/0.jpg)](https://www.youtube.com/watch?v=9u0LRqWD_4Y)
+
 
 
 ## Expresiones de Gratitud 🎁
