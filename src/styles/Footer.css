@@ -71,6 +71,7 @@ a {
     height: 4rem;
     display: grid;
     grid-template-columns: 3fr 6fr 1fr 1fr 1fr;
+    margin-top: 15%;
 }
 
 /* Extra small devices (phones, 600px and down) */
